@@ -1,0 +1,135 @@
+.chatbox {
+  height: 65vh;
+  width: 80rem;
+  background-color: $color-grey-light-3;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    padding: 1.5rem 1rem;
+    background-color: $color-grey-dark-2;
+    font-size: 1.25rem;
+
+    h2 {
+      font-weight: 800;
+      color: $color-grey-light-3;
+    }
+  }
+
+  &__chat {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0.5rem;
+    overflow-y: auto;
+  }
+
+  &__send {
+    padding: 0.1rem 0.15rem;
+    // background-color: aqua;
+  }
+
+  &__msg {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.2rem;
+    max-width: 70%;
+    border-radius: 8px;
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    &--sent {
+      align-self: flex-end;
+      background-color: $color-grad-3;
+      color: $color-grey-light-2;
+    }
+
+    &--rec {
+      align-self: flex-start;
+      background-color: $color-grey-dark-1;
+      color: $color-grey-light-2;
+    }
+  }
+
+  &__user-joined {
+    background-color: $color-grey-light-1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0.3rem 1rem;
+    max-width: 70%;
+    border-radius: 6px;
+    align-self: center;
+  }
+}
+
+.send {
+  background-color: $color-grey-dark-2;
+  // border-radius: 2rem 2rem 8px 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  // margin: 0 1rem;
+  padding-left: 3rem;
+  transition: all 0.3s;
+
+  &:focus-within {
+    box-shadow: 0 0.7rem 3rem rgba($color-grey-dark-1, 0.08);
+  }
+
+  &__field {
+    border: none;
+    background: none;
+    font-family: inherit;
+    color: $color-grey-light-1;
+    font-size: 1.7rem;
+    width: 30rem;
+    flex-grow: 1;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $color-grey-light-3;
+    }
+  }
+
+  &__btn {
+    height: 100%;
+    font-family: inherit;
+    color: inherit;
+    font-size: 1.4rem;
+    // font-weight: 700;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    background-color: $color-grad-1;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    margin: 0.6rem 0.5rem;
+    transition: all 0.3s;
+
+    display: flex;
+    align-items: center;
+
+    svg {
+      // height: 2.4rem;
+      // width: 2.4rem;
+      fill: $color-grey-light-2;
+      // margin-right: 0.7rem;
+      transform: translateY(-1px);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+}

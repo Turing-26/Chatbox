@@ -1,0 +1,21 @@
+{
+  "name": "chatbot-project",
+  "version": "1.0.0",
+  "description": "Chatbox test",
+  "main": "index.js",
+  "scripts": {
+    "compile": "parcel index.html",
+    "devStart": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.18",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1"
+  }
+}

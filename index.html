@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="sass/main.scss" />
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer type="module" src="js/controller.js"></script>
+    <title>Chatbox - test</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="chatbox">
+        <div class="chatbox__heading"><h2>Sketchy UwU chatbox</h2></div>
+        <!-- <div class="options"></div> -->
+        <div class="chatbox__chat">
+          <!-- <div class="chatbox__user-joined">
+            <p>%user_joined%</p>
+          </div> -->
+          <!-- <div class="chatbox__msg chatbox__msg--sent">
+            <p>%message%</p>
+          </div> -->
+          <!-- <div class="chatbox__msg chatbox__msg--rec">
+            <h4>%Name%</h4>
+            <p>%message%</p>
+          </div> -->
+        </div>
+        <div class="chatbox__send">
+          <form class="send" action="#" id="send-form">
+            <input
+              type="text"
+              class="send__field"
+              name="msg_input"
+              id="msg_input"
+              placeholder="Type a message"
+            />
+            <button class="send__btn" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Outline"
+                viewBox="0 0 24 24"
+                width="50"
+                height="50"
+              >
+                <path
+                  d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
