@@ -1,6 +1,7 @@
 // Node server to handle socket.io connections
 
 const io = require("socket.io")(8000, {
+  // The 2 ports allowed are the ones mentioned below, make sure you run either of the 2, or allow all
   cors: {
     origin: ["http://localhost:1234", "http://localhost:62374"],
   },
